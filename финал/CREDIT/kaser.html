@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASPER ENERGY LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-image: url('background.png'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border-bottom: 2px solid #ff4500;
+        }
+
+        .menu-item {
+            padding: 10px;
+            margin: 0 10px;
+            color: white;
+            transition: transform 0.3s, background-color 0.3s;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-3px);
+            background-color: #ff4500;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid #ff4500;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+
+        footer div {
+            width: 30%;
+            flex-shrink: 0;
+        }
+
+        footer img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .more-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .more-button:hover {
+            background-color: #ff5722;
+        }
+
+        form {
+            border: 2px solid #ff4500;
+            padding: 20px;
+            border-radius: 10px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        form.hidden {
+            opacity: 0;
+        }
+
+        form.visible {
+            opacity: 1;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        button {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            color: #333;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff4500;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff5722;
+        }
+
+        header img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #ff4500;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        #myBtn:hover {
+            background-color: #ff5722;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 69, 0, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 0 15px rgba(255, 69, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <img src="kaser.png" alt="Logo" height="100">
+    </div>
+    <div>
+        <h1>KASPER ENERGY LLC</h1>
+        <p>Installation, Commissioning, Repair, Maintenance</p>
+    </div>
+    <div>
+        <p>Contact information<br>Address: 123 Street, City<br>Email: example@example.com</p>
+    </div>
+</header>
+
+<nav>
+    <div class="menu-item">
+        Main
+    </div>
+    <div class="menu-item">
+        PVR
+    </div>
+    <div class="menu-item">
+        Video surveillance
+    </div>
+    <div class="menu-item">
+        About us
+    </div>
+    <div class="menu-item">
+        Contacts
+    </div>
+</nav>
+
+<footer>
+    <div>
+        <img src="alko.png" alt="Product" height="150">
+    </div>
+    <div>
+        <h2>ALCO Stand</h2>
+        <a href="#" class="more-button">Learn More</a>
+    </div>
+    <div>
+        <form class="hidden">
+            <input type="text" placeholder="Your name"><br>
+            <input type="tel" placeholder="Your phone number"><br>
+            <button type="submit">Add Calls</button>
+        </form>
+    </div>
+</footer>
+<footer>
+    <div>
+        <img src="pip.png" alt="Product" height="150">
+    </div>
+    <div>
+        <h2>Wearable Video Recorders</h2>
+        <a href="#" class="more-button">Learn More</a>
+    </div>
+    <div>
+        <form class="hidden">
+            <input type="text" placeholder="Your name"><br>
+            <input type="tel" placeholder="Your phone number"><br>
+            <button type="submit">Add Calls</button>
+        </form>
+    </div>
+</footer>
+<footer>
+    <div>
+        <img src="wew.png" alt="Product" height="150">
+    </div>
+    <div>
+        <h2>Video surveillance</h2>
+        <a href="#" class="more-button">Learn More</a>
+    </div>
+    <div>
+        <form class="hidden">
+            <input type="text" placeholder="Your name"><br>
+            <input type="tel" placeholder="Your phone number"><br>
+            <button type="submit">Add Calls</button>
+        </form>
+    </div>
+</footer>
+<footer>
+    <div>
+        <img src="fff.png" alt="Product" height="150">
+    </div>
+    <div>
+        <h2>Access Control Systems</h2>
+        <a href="#" class="more-button">Learn More</a>
+    </div>
+    <div>
+        <form class="hidden">
+            <input type="text" placeholder="Your name"><br>
+            <input type="tel" placeholder="Your phone number"><br>
+            <button type="submit">Add Calls</button>
+        </form>
+    </div>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9650;</button>
+<script>
+    const footerForms = document.querySelectorAll('footer form');
+    footerForms.forEach(form => {
+        form.parentElement.addEventListener('mouseover', () => {
+            form.classList.remove('hidden');
+            form.classList.add('visible');
+        });
+        form.parentElement.addEventListener('mouseout', () => {
+            form.classList.remove('visible');
+            form.classList.add('hidden');
+        });
+    });
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>
